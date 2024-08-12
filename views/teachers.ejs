@@ -1,0 +1,66 @@
+<section class="our-teachers">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <h3><span>Our</span> Teachers</h3>
+        <ul>
+          <li>
+            Lorem ipsum is simply dummy text of the printing and typesetting
+            industry.
+          </li>
+        </ul>
+      </div>
+      <div id="owl-teachers" class="owl-carousel">
+        <% teachers.forEach(function(teacher) { %>
+        <div class="col-xs-12">
+          <div class="teachers">
+            <a href="#"
+              ><img src="<%= teacher.image %>" alt="<%= teacher.name %>"
+            /></a>
+            <div class="col-sm-9">
+              <h3><a href="#"><%= teacher.name %></a></h3>
+              <p class="meta"><%= teacher.subject %></p>
+              <p><%= teacher.bio %></p>
+              <ul class="social-icons">
+                <li>
+                  <a href="<%= teacher.social.facebook %>"
+                    ><i class="fa fa-facebook"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="<%= teacher.social.twitter %>"
+                    ><i class="fa fa-twitter"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="<%= teacher.social.linkedin %>"
+                    ><i class="fa fa-linkedin"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="<%= teacher.social.pinterest %>"
+                    ><i class="fa fa-pinterest"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="<%= teacher.social.instagram %>"
+                    ><i class="fa fa-instagram"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="<%= teacher.social.youtube %>"
+                    ><i class="fa fa-youtube"></i
+                  ></a>
+                </li>
+              </ul>
+              <a href="#" class="btn btn-medium btn-default"
+                >Know More <i class="lnr lnr-arrow-right"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <% }); %>
+      </div>
+    </div>
+  </div>
+</section>
